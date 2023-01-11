@@ -6,7 +6,7 @@ const fibonacci = function(placement) {
     let currentNumber = 0,
         lastNumber = 1;
     
-        for(let i = 0; i < placement; i++){
+    for(let i = 0; i < placement; i++){
         let placeholder = currentNumber;
         currentNumber += lastNumber;
         lastNumber = placeholder;
