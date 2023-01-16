@@ -1,5 +1,5 @@
 const findTheOldest = function(people) {
-    people.sort((person1, person2) => {
+    const sortedAge = people.sort((person1, person2) => {
         let lifespan1, lifespan2;
         if(!person1.yearOfDeath){
             lifespan1 = new Date().getFullYear() - person1.yearOfBirth;
@@ -9,7 +9,7 @@ const findTheOldest = function(people) {
         } else lifespan2 = person2.yearOfDeath - person2.yearOfBirth;
         return lifespan1 > lifespan2 ? -1:1;
     });
-    return(people[0]);
+    return(sortedAge[0]);
 };
 
 // Do not edit below this line
